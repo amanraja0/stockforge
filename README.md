@@ -14,12 +14,12 @@ It includes:
 
 ## Project Structure
 
-- `/tmp/workspace/amanraja0/stockforge/client` → frontend app
-- `/tmp/workspace/amanraja0/stockforge/server` → backend API
+- `./client` → frontend app
+- `./server` → backend API
 
 ## Environment Variables (Server)
 
-Create `/tmp/workspace/amanraja0/stockforge/server/.env`:
+Create `./server/.env`:
 
 ```env
 PORT=5000
@@ -33,10 +33,10 @@ JWT_SECRET=your_jwt_secret
 ## Install Dependencies
 
 ```bash
-cd /tmp/workspace/amanraja0/stockforge/client
+cd client
 npm install
 
-cd /tmp/workspace/amanraja0/stockforge/server
+cd ../server
 npm install
 ```
 
@@ -47,7 +47,7 @@ Use two terminals:
 ### 1) Start backend
 
 ```bash
-cd /tmp/workspace/amanraja0/stockforge/server
+cd server
 npm run dev
 ```
 
@@ -56,7 +56,7 @@ Backend runs on `http://localhost:5000`.
 ### 2) Start frontend
 
 ```bash
-cd /tmp/workspace/amanraja0/stockforge/client
+cd client
 npm run dev
 ```
 
@@ -67,7 +67,7 @@ Frontend runs on Vite default URL (usually `http://localhost:5173`) and calls th
 ### Client
 
 ```bash
-cd /tmp/workspace/amanraja0/stockforge/client
+cd client
 npm run lint
 npm run build
 ```
@@ -75,6 +75,6 @@ npm run build
 ### Server
 
 ```bash
-cd /tmp/workspace/amanraja0/stockforge/server
+cd server
 npm test
 ```
